@@ -10,11 +10,17 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/contact">Contact</RouterLink>
     </nav>
   </header>
+  <main>
+    <RouterView />
+  </main>
 
-  <RouterView />
 </template>
 
 <style scoped>
+main {
+  width: 100%;
+}
+
 header {
   width: 100%;
   height: 80px;
