@@ -15,7 +15,7 @@ onMounted(async () => {
 
 <template>
   <h1>Contact Page</h1>
-  <img :src="imageDetails?.url" alt="Image" style="{ height: 100px; width: 100px; }"/>
+  <img :src="imageDetails?.url" alt="Image" :style="{ height: '200px', width: '200px' }"/>
 </template>
 
 <style>
