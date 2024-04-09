@@ -6,6 +6,7 @@ import 'primevue/resources/themes/aura-light-green/theme.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import PrimeVue from 'primevue/config';
+import ToastService from 'primevue/toastservice';
 
 
 // Internal
@@ -24,11 +25,12 @@ async function enableMocking() {
   return worker.start();
 }
 
-const app = createApp(App);
+export const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
 app.use(PrimeVue);
+app.use(ToastService);
 
 enableMocking().then(() => {
     app.mount("#app")
