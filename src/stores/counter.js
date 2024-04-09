@@ -6,7 +6,7 @@ import axios from '@/lib/axios.js'
 export const useCounterStore = defineStore('counter', () => {
   // Store
   const count = ref(0)
-  const imageDetails = ref("kjkj")
+  const imageDetails = ref({})
 
   // Getters
   const doubleCount = computed(() => count.value * 2)
@@ -17,7 +17,8 @@ export const useCounterStore = defineStore('counter', () => {
   }
 
   function getPhotos() {
-    axios.get("https://jsonplaceholder.typicode.com/photos").then((res) => {
+    axios.get("/photos").then((res) => {
+      console.log(res)
       imageDetails.value = res[0]
     })
   }
