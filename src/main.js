@@ -1,10 +1,16 @@
-import "./assets/main.css";
+// Styles
+import './assets/main.css'
+import 'primevue/resources/themes/aura-light-green/theme.css'
 
-import { createApp } from "vue";
-import { createPinia } from "pinia";
+// External
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import PrimeVue from 'primevue/config';
 
-import App from "./App.vue";
-import router from "./router";
+
+// Internal
+import App from './App.vue'
+import router from './router'
 
 async function enableMocking() {
   if (process.env.NODE_ENV !== "development") {
@@ -22,6 +28,7 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
+app.use(PrimeVue);
 
 enableMocking().then(() => {
     app.mount("#app")
