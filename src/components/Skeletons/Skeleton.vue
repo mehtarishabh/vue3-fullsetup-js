@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import Skeleton from "primevue/skeleton";
+import Skeleton from 'primevue/skeleton'
 </script>
 
 <style scope>
@@ -18,7 +18,7 @@ import Skeleton from "primevue/skeleton";
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 1rem;
 }
 </style>
