@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import { useCounterStore } from '@/stores/counter.js';
 import { storeToRefs } from 'pinia'
 import Skeleton from "@/components/Skeletons/Skeleton.vue"
+import { info } from '@/services/ToastService';
 
 const counter = useCounterStore();
 const { imageDetails } = storeToRefs(counter)
@@ -15,6 +16,10 @@ onMounted(async () => {
   isLoading.value = false
 })
 
+const showToast = () => {
+  info()
+}
+
 </script>
 
 <template>
@@ -22,6 +27,7 @@ onMounted(async () => {
   <div>
     <img :src="imageDetails?.url" alt="Image" style="{ height: 200px; width: 200px; }" />
     <Skeleton/>
+    <button @click="showToast">Show toast</button>
   </div>
 </template>
 

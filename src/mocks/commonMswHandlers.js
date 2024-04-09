@@ -5,7 +5,6 @@ import { faker } from "@faker-js/faker";
 export const handlers = [
   // Handles a GET request
   http.get("/photos", () => {
-    console.log("/photos");
     const photos = [
       {
         albumId: 1,

@@ -18,7 +18,6 @@ export const useCounterStore = defineStore('counter', () => {
 
   function getPhotos() {
     axios.get("/photos").then((res) => {
-      console.log(res)
       imageDetails.value = res[0]
     })
   }
