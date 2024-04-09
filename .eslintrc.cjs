@@ -17,7 +17,6 @@ module.exports = {
     'vue/no-unused-refs': ['error'],
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
-    'vue/no-duplicate-imports': ['error'],
     'no-unused-vars': ['error'],
     'vue/no-export-in-script-setup': ['error']
   },
