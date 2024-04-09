@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import Toast from 'primevue/toast';
+import { RouterLink, RouterView } from 'vue-router'
+import Toast from 'primevue/toast'
 </script>
 
 <template>
@@ -15,7 +15,6 @@ import Toast from 'primevue/toast';
     <Toast position="bottom-right" />
     <RouterView />
   </main>
-
 </template>
 
 <style scoped>

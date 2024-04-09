@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="skeleton rounded-lg mb-4 p-8"
-  >
+  <div class="skeleton rounded-lg mb-4 p-8">
     <div class="flex mb-4">
       <Skeleton shape="circle" size="4rem" class="mr-2"></Skeleton>
       <div>
@@ -19,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import Skeleton from "primevue/skeleton";
+import Skeleton from 'primevue/skeleton'
 </script>
 
 <style scope>
