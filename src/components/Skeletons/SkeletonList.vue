@@ -39,7 +39,7 @@
   </ul>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Skeleton from 'primevue/skeleton'
 </script>
 
