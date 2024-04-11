@@ -20,6 +20,15 @@ const router = createRouter({
       meta: { needsAuth: false },
     },
     {
+      path: '/forms',
+      name: 'forms',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/FormsView.vue'),
+      meta: { needsAuth: false },
+    },
+    {
       path: '/contact',
       name: 'contact',
       // route level code-splitting

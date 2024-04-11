@@ -9,6 +9,7 @@ import DynamicDialog from 'primevue/dynamicdialog';
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/forms">Forms</RouterLink>
       <RouterLink to="/contact">Contact</RouterLink>
     </nav>
   </header>
