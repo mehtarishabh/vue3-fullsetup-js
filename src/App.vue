@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Toast from 'primevue/toast'
+import DynamicDialog from 'primevue/dynamicdialog';
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import Toast from 'primevue/toast'
   </header>
   <main>
     <Toast position="bottom-right" />
+    <DynamicDialog />
     <RouterView />
   </main>
 </template>
