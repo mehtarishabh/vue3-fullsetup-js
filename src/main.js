@@ -12,6 +12,14 @@ import DialogService from 'primevue/dialogservice';
 // Internal
 import App from './App.vue'
 import router from './router'
+import { defineRule } from 'vee-validate'
+
+// Form Validation
+import { required, email, min } from '@vee-validate/rules'
+
+defineRule('required', required)
+defineRule('email', email)
+defineRule('min', min)
 
 async function enableMocking() {
   if (process.env.NODE_ENV !== 'development') {
@@ -31,7 +39,7 @@ app.use(createPinia())
 app.use(router)
 app.use(PrimeVue)
 app.use(ToastService)
-app.use(DialogService);
+app.use(DialogService)
 
 enableMocking().then(() => {
   app.mount('#app')
