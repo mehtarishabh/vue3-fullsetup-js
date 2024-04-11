@@ -5,7 +5,7 @@
  * lower than max if max isn't an integer).
  * Using Math.round() will give you a non-uniform distribution!
  */
-export const getRandomInt = (min: number, max: number) => {
+export const getRandomInt = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -14,6 +14,6 @@ export const getRandomInt = (min: number, max: number) => {
 /**
  * Returns deep clone of valid JSON object provided.
  */
-export const cloneJson = <T>(obj: T): T => {
+export const cloneJson = (obj) => {
   return JSON.parse(JSON.stringify(obj));
 };

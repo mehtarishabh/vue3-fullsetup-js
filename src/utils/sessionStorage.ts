@@ -1,11 +1,11 @@
 const storagePrefix = 'wisely_';
 
 const sessionStorage = {
-  getItem: (key: string) => {
+  getItem: (key) => {
     const item = window.sessionStorage.getItem(`${storagePrefix}${key}`);
     return item ? JSON.parse(item) : item;
   },
-  setItem: (key: string, value: any) => {
+  setItem: (key, value) => {
     window.sessionStorage.setItem(`${storagePrefix}${key}`, JSON.stringify(value));
   },
   removeItem: () => {
